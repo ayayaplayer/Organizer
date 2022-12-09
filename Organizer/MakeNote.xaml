@@ -1,0 +1,31 @@
+﻿<Window x:Class="Organizer.MakeNote"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        
+        xmlns:local="clr-namespace:Organizer"
+        mc:Ignorable="d"
+        Title="MakeNote" Height="450" Width="375">
+    <Grid>
+        <CheckBox  Name="EntityCBX" HorizontalAlignment="Left" Margin="151,25,0,0" VerticalAlignment="Top" Checked="EntityCBX_Checked" Unchecked="EntityCBX_Unchecked"/>
+        <Label Name="Entity" Content="Юридическое лицо" HorizontalAlignment="Left" Margin="28,20,0,0" VerticalAlignment="Top"/>
+        <Label Name="Individual" Content="Физическое лицо" HorizontalAlignment="Left" Margin="221,20,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="IndividualCBX" Content="" HorizontalAlignment="Left" Margin="333,25,0,0" VerticalAlignment="Top" Checked="IndividualCBX_Checked" Unchecked="IndividualCBX_Unchecked"/>
+        <Label Content="Имя:" HorizontalAlignment="Left" Margin="31,66,0,0" VerticalAlignment="Top"/>
+        <Label Content="Фамилия:" HorizontalAlignment="Left" Margin="31,113,0,0" VerticalAlignment="Top"/>
+        <Label Content="Номер телефона:" HorizontalAlignment="Left" Margin="31,164,0,0" VerticalAlignment="Top"/>
+        <Label Content="Дело:" HorizontalAlignment="Left" Margin="31,266,0,0" VerticalAlignment="Top"/>
+        <DatePicker Name="Date" HorizontalAlignment="Left" Margin="162,217,0,0" VerticalAlignment="Top" Focusable="False" />
+        <TextBox Name="Name" HorizontalAlignment="Left" Margin="162,74,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" PreviewTextInput="Name_PreviewTextInput"  />
+        <TextBox Name="Surname" HorizontalAlignment="Left" Margin="162,121,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" PreviewTextInput="Surname_PreviewTextInput" />
+        <TextBox       Foreground="#FF878787" Text="7-999-999-99-99" Name="PhoneNumber" HorizontalAlignment="Left" Margin="162,172,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" PreviewTextInput="PhoneNumber_PreviewTextInput" MaxLength="15" PreviewKeyDown="PhoneNumber_PreviewKeyDown" />
+        <TextBox Name="Deal" HorizontalAlignment="Left" Margin="162,270,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="148" Height="57"/>
+        <Label Content="Дата:" HorizontalAlignment="Left" Margin="31,217,0,0" VerticalAlignment="Top"/>
+        <Button Name="SaveNote" Content="Сохранить запись" HorizontalAlignment="Center" Margin="0,365,0,0" VerticalAlignment="Top" Click="SaveNote_Click" Height="27"/>
+        <Label Name="NameReminder" Content="поле содержит только буквы"  Foreground="#FF878787" HorizontalAlignment="Left" Margin="159,92,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.067,-0.654" Height="27" Width="194"  Visibility="Hidden"/>
+        <Label Name="SurnameReminder" Content="поле содержит только буквы"  Foreground="#FF878787" HorizontalAlignment="Left" Margin="159,139,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.067,-0.654" Height="28" Width="194" Visibility="Hidden"/>
+
+
+    </Grid>
+</Window>

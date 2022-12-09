@@ -1,0 +1,34 @@
+﻿<Window x:Class="Organizer.ListNotes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Organizer"
+        mc:Ignorable="d"
+        Title="ListNotes" Height="450" Width="800">
+    <Grid>
+        <TabControl  HorizontalAlignment="Stretch" Name="tabControl1" VerticalAlignment="Stretch"  VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" FontSize="14">
+            <TabItem Header="Найдено по запросу">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="9*"/>
+
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <DataGrid Name="data"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" FontSize="14">
+
+
+                    </DataGrid>
+                    <Button Name="Search" Content="Поиск записей" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Click="Search_Click"/>
+                    <ComboBox  Name="TakeStatus" HorizontalAlignment="Left" Margin="129,0,0,0" Grid.Row="1" VerticalAlignment="Center" Width="164" Height="25" SelectionChanged="TakeStatus_SelectionChanged">
+                        <TextBlock >Физическое лицо</TextBlock>
+                        <TextBlock >Юридичесоке лицо</TextBlock>
+                    </ComboBox>
+                    <Button Name="Delete" Content="Удалить" HorizontalAlignment="Left" Margin="314,10,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="83" Click="Delete_Click" />
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
