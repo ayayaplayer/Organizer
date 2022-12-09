@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Organizer", "Organizer\Organizer.csproj", "{F8462747-4B68-4176-AAE5-7FBCE6B89E54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganizerTests", "OrganizerTests\OrganizerTests.csproj", "{7B15E028-045F-467C-ADB7-1862B22A418F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8462747-4B68-4176-AAE5-7FBCE6B89E54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8462747-4B68-4176-AAE5-7FBCE6B89E54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8462747-4B68-4176-AAE5-7FBCE6B89E54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8462747-4B68-4176-AAE5-7FBCE6B89E54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B15E028-045F-467C-ADB7-1862B22A418F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B15E028-045F-467C-ADB7-1862B22A418F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B15E028-045F-467C-ADB7-1862B22A418F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B15E028-045F-467C-ADB7-1862B22A418F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5AF5E5D0-E7E8-413D-8C37-0DF7B03763E8}
+	EndGlobalSection
+EndGlobal
